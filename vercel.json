@@ -1,0 +1,1 @@
+{"$schema":"https://openapi.vercel.sh/vercel.json","version":2,"buildCommand":"npm run build","outputDirectory":"public","functions":{"api/site.js":{"includeFiles":".generated/**","maxDuration":30}},"routes":[{"handle":"filesystem"},{"src":"/(.*)","dest":"/api/site?__path=$1"}]}

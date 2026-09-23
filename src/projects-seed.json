@@ -1,0 +1,136 @@
+[
+  {
+    "title": "Hospital Bed Management Application",
+    "category": "Mobile Application",
+    "stack": [
+      "React Native",
+      "Expo",
+      "JavaScript",
+      "REST APIs",
+      "Git"
+    ],
+    "description": "An application for hospital search, bed availability, and booking workflows. Patient-facing screens connect to REST APIs with form validation, loading states, navigation, and clear error handling.",
+    "date": "June – July 2025",
+    "image": "/assets/project-hospital.png"
+  },
+  {
+    "title": "EnterpriseFlow – Workflow Management SaaS",
+    "category": "Full-Stack SaaS",
+    "stack": [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "FastAPI",
+      "PostgreSQL",
+      "REST APIs",
+      "Vercel"
+    ],
+    "description": "A workflow management platform bringing tasks, assignments, and progress tracking into one workspace. A React interface and FastAPI services connect team workflows to structured PostgreSQL data.",
+    "date": "",
+    "image": "/assets/project-enterpriseflow.png"
+  },
+  {
+    "title": "Personalized Retail Product Recommendation Engine",
+    "category": "Machine Learning",
+    "stack": [
+      "Python",
+      "Scikit-learn",
+      "Collaborative Filtering",
+      "SQL",
+      "REST API"
+    ],
+    "description": "A recommendation engine that uses collaborative filtering to connect shoppers with relevant products. Python models process customer–product interactions, with SQL data access and a REST API for integration.",
+    "date": "",
+    "image": "/assets/project-retail.png"
+  },
+  {
+    "title": "AI-Powered Business Process Intelligence & Decision Support Platform",
+    "category": "AI & Analytics",
+    "stack": [
+      "Python",
+      "Scikit-learn",
+      "Pandas",
+      "PostgreSQL",
+      "FastAPI",
+      "REST APIs",
+      "Docker"
+    ],
+    "description": "A platform for exploring business process data and supporting operational decisions. Pandas data processing, machine learning, and PostgreSQL combine with FastAPI endpoints and a containerized application setup.",
+    "date": ""
+  },
+  {
+    "title": "Enterprise LAN Design with VLAN Segmentation & Inter-VLAN Routing",
+    "category": "Computer Networks",
+    "stack": [
+      "Cisco Packet Tracer",
+      "Cisco IOS CLI"
+    ],
+    "description": "An enterprise network design using VLANs to separate departments and inter-VLAN routing to support controlled communication. Cisco Packet Tracer and IOS CLI provide a reproducible environment for configuring and checking connectivity.",
+    "date": "January 2026",
+    "image": "/assets/project-globe.png",
+    "visualCredit": "Gleb Kuznetsov / milkinside",
+    "visualSource": "https://dribbble.com/shots/19925867-Digital-globe-routing-for-milkinside"
+  },
+  {
+    "title": "Secure Small-Office Network – NAT, ACL & DHCP Automation",
+    "category": "Network Security",
+    "stack": [
+      "Cisco Packet Tracer",
+      "Cisco IOS CLI"
+    ],
+    "description": "A small-office network combining automated address assignment, network address translation, and access control lists. The design focuses on practical connectivity, traffic restrictions, and repeatable Cisco IOS configuration.",
+    "date": "",
+    "image": "/assets/project-cisco.png",
+    "visualCredit": "Wika",
+    "visualSource": "https://dribbble.com/shots/25055318-Cisco-Commands-app-developed-and-published-play-store"
+  },
+  {
+    "title": "AI-Powered Retail Demand Forecasting & Inventory Optimization",
+    "category": "Machine Learning",
+    "stack": [
+      "Python",
+      "XGBoost",
+      "Scikit-learn",
+      "SQL",
+      "Pandas"
+    ],
+    "description": "A retail analytics project using historical sales data to forecast demand and inform inventory planning. Pandas supports data preparation, with XGBoost and Scikit-learn for predictive modeling and evaluation.",
+    "date": "",
+    "image": "/assets/project-inventory.png",
+    "visualCredit": "Bhautik Domadiya",
+    "visualSource": "https://dribbble.com/shots/26833663-AI-Inventory-Dashboard-Smart-Stock-Logistics-UI"
+  },
+  {
+    "title": "Weather Web Application",
+    "category": "Web Application",
+    "stack": [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "OpenWeatherMap API",
+      "Browser APIs"
+    ],
+    "description": "A responsive weather application using OpenWeatherMap and browser location capabilities. Search for a city or use a location-based workflow to explore current weather with clear loading and error states.",
+    "date": "January 2025",
+    "image": "/assets/project-weather.png"
+  },
+  {
+    "title": "Modular Task Management & Workflow Automation System",
+    "category": "Software Engineering",
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "REST APIs",
+      "MySQL",
+      "JUnit",
+      "Mockito",
+      "Git",
+      "Docker"
+    ],
+    "description": "A modular task management system supporting task creation, assignments, priorities, and status tracking. Layered Spring Boot services, REST APIs, and MySQL organize the application; JUnit and Mockito cover business logic and validation.",
+    "date": "",
+    "image": "/assets/project-workflow.jpg",
+    "visualCredit": "Juice Lab",
+    "visualSource": "https://dribbble.com/shots/27327498-AI-Agent-Mobile-App-Workflow-Automation-Analytics-Dashboard"
+  }
+]

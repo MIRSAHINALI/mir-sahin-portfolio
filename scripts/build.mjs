@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+const read=p=>fs.readFile(p,'utf8');
+const seeds=JSON.parse(await read('src/projects-seed.json')).map((p,i)=>({...p,id:p.id||'project-'+i,github:p.github||'',demo:p.demo||''}));
+let projects=await read('src/projects.html');const art={};
+for(const m of projects.matchAll(/<button class="project-card[^>]*data-project="(\d+)"[^>]*>([\s\S]*?)<div class="project-info">/g))art['project-'+m[1]]=m[2];
+projects=projects.replace(/(<section class="project-list"[^>]*>)[\s\S]*?(<\/section>)/,'$1<!-- PROJECT_CARDS -->$2');
+const constants={SITE_DEFAULTS:JSON.parse(await read("src/content-seed.json")),CONTENT_ADMIN:await read("src/content-admin.html"),SEEDS:seeds,ART:art,HOME:await read('src/home.html'),PROJECTS:projects,GALLERY:await read('src/gallery.html'),NOT_FOUND:await read('src/404.html'),ADMIN:await read('src/admin.html')};
+await fs.mkdir('.generated',{recursive:true});
+await fs.writeFile('.generated/worker.mjs',Object.entries(constants).map(([key,val])=>`const ${key}=${JSON.stringify(val)};`).join('\n')+'\n'+await read('src/worker.js'));
+await fs.copyFile('src/login.html','.generated/login.html');console.log('Vercel portfolio and independent project editor built.');

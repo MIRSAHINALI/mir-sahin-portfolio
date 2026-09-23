@@ -1,0 +1,9 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {hashPassword,verifyPassword,sessionToken,sessionUser,COOKIE,cookieHeader} from '../lib/auth.mjs';
+import {dispatch} from '../api/site.js';
+const env={EDITOR_EMAIL:'owner@example.com',SESSION_SECRET:'a'.repeat(48)};
+test('password hashes verify only correct credentials',async()=>{const hash=await hashPassword('secure-test-password');assert.equal(await verifyPassword('secure-test-password',hash),true);assert.equal(await verifyPassword('wrong',hash),false);assert.equal(await verifyPassword(null,hash),false)});
+test('signed sessions reject tampering, expiry and other owners',()=>{const token=sessionToken(env.EDITOR_EMAIL,env.SESSION_SECRET,100);const cookie=COOKIE+'='+token;assert.equal(sessionUser(cookie,env,101),env.EDITOR_EMAIL);assert.equal(sessionUser(cookie,env,100+8*3600000),null);assert.equal(sessionUser(cookie+'x',env,101),null);assert.equal(sessionUser(cookie,{...env,EDITOR_EMAIL:'stranger'},101),null);assert.match(cookieHeader(token),/HttpOnly; Secure; SameSite=Strict/)});
+test('spoofed identity headers cannot open editor or mutate data',async()=>{for(const path of ['/admin/','/admin/content/','/api/editor/projects','/api/editor/content','/api/editor/resume']){const response=await dispatch(new Request('https://portfolio.test'+path,{headers:{'oai-authenticated-user-email':env.EDITOR_EMAIL,'oai-authenticated-user-id':'owner'}}),env);assert.equal(response.status,path.startsWith('/admin/')?302:401)}});
+test('logout rejects cross-origin requests; valid logout clears cookie',async()=>{const make=origin=>new Request('https://portfolio.test/api/auth/logout',{method:'POST',headers:{origin,'x-editor-request':'1'}});assert.equal((await dispatch(make('https://evil.test'),env)).status,403);const response=await dispatch(make('https://portfolio.test'),env);assert.equal(response.status,200);assert.match(response.headers.get('set-cookie'),/Max-Age=0/)});

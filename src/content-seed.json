@@ -1,0 +1,219 @@
+{
+  "profile": {
+    "name": "Mir Sahin Ali",
+    "headline": "FullStack Developer",
+    "intro": "Hey, I am a FullStack Developer. Let’s connect",
+    "summary": "I’m a final-year Computer Science & Engineering student at Amity University, Kolkata. I build web and mobile applications with React, Java, Python, and REST APIs, and explore machine learning and computer networks. My work spans hospital management, business workflows, retail analytics, and secure network design. I enjoy turning complex problems into practical, maintainable software. Let’s build something meaningful together!",
+    "photo": "/assets/mir-sahin-ali.png",
+    "email": "mir1sahin123@gmail.com",
+    "brand": "Sahin",
+    "footer": "Designed and developed for Mir Sahin Ali"
+  },
+  "skills": [
+    {
+      "name": "MongoDB",
+      "image": "/assets/mongodb.png",
+      "symbol": ""
+    },
+    {
+      "name": "AWS",
+      "image": "/assets/aws.png",
+      "symbol": ""
+    },
+    {
+      "name": "Node.js",
+      "image": "/assets/nodejs.png",
+      "symbol": ""
+    },
+    {
+      "name": "Figma",
+      "image": "/assets/figma.png",
+      "symbol": ""
+    },
+    {
+      "name": "HTML",
+      "image": "/assets/html.png",
+      "symbol": ""
+    },
+    {
+      "name": "CSS",
+      "image": "/assets/CSS.png",
+      "symbol": ""
+    },
+    {
+      "name": "JavaScript",
+      "image": "/assets/js.png",
+      "symbol": ""
+    },
+    {
+      "name": "TypeScript",
+      "image": "/assets/typescript.png",
+      "symbol": ""
+    },
+    {
+      "name": "Java",
+      "image": "/assets/java.png",
+      "symbol": ""
+    },
+    {
+      "name": "Python",
+      "image": "/assets/python.svg",
+      "symbol": ""
+    },
+    {
+      "name": "React",
+      "image": "",
+      "symbol": "⚛"
+    },
+    {
+      "name": "MySQL",
+      "image": "/assets/mysql.png",
+      "symbol": ""
+    },
+    {
+      "name": "PostgreSQL",
+      "image": "/assets/postgresql.svg",
+      "symbol": ""
+    },
+    {
+      "name": "GitHub",
+      "image": "/assets/github.png",
+      "symbol": ""
+    },
+    {
+      "name": "Docker",
+      "image": "/assets/docker.svg",
+      "symbol": ""
+    },
+    {
+      "name": "FastAPI",
+      "image": "/assets/fastapi.svg",
+      "symbol": ""
+    },
+    {
+      "name": "Spring Boot",
+      "image": "/assets/spring-boot.svg",
+      "symbol": ""
+    },
+    {
+      "name": "SQL",
+      "image": "/assets/sql.svg",
+      "symbol": ""
+    },
+    {
+      "name": "Cisco IOS",
+      "image": "",
+      "symbol": "IOS"
+    }
+  ],
+  "experience": [
+    {
+      "company": "DokLink Services Pvt. Ltd.",
+      "date": "June 2026 – July 2026",
+      "role": "Data Analyst",
+      "image": "/assets/doklink.webp",
+      "details": "Analyzed hospital bed availability, occupancy, and booking records for the Hospital Bed Management System.\nOrganized and validated hospital data to identify missing entries, inconsistencies, and trends in bed utilization.\nPrepared summaries of occupancy and booking patterns to support reporting and operational decisions."
+    },
+    {
+      "company": "DokLink Services Pvt. Ltd.",
+      "date": "June 2025 – July 2025",
+      "role": "Full Stack Developer",
+      "image": "/assets/doklink.webp",
+      "details": "Contributed to a Hospital Bed Management Application with hospital search, bed availability, and booking workflows.\nIntegrated REST APIs with React Native and Expo screens.\nImplemented reusable components, navigation, validation, loading indicators, and error handling."
+    },
+    {
+      "company": "Employees’ Provident Fund Organisation (EPFO)",
+      "date": "May 2025",
+      "role": "Admin & Data Support Intern",
+      "image": "/assets/epfo.jpeg",
+      "details": "Supported data digitization, documentation, and administrative records.\nWorked with internal software to maintain data accuracy and documentation quality."
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Python Programming",
+      "issuer": "Udemy",
+      "url": ""
+    },
+    {
+      "name": "Data Structures & Algorithms",
+      "issuer": "Udemy",
+      "url": ""
+    },
+    {
+      "name": "Java Programming",
+      "issuer": "Udemy",
+      "url": ""
+    },
+    {
+      "name": "Foundations of Cybersecurity",
+      "issuer": "Coursera",
+      "url": ""
+    },
+    {
+      "name": "Manage Security Risks",
+      "issuer": "Coursera",
+      "url": ""
+    },
+    {
+      "name": "Geospatial Technology for Climate Smart Agriculture",
+      "issuer": "ISRO",
+      "url": ""
+    },
+    {
+      "name": "UI/UX Figma Designer",
+      "issuer": "Udemy",
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech in Computer Science & Engineering",
+      "institution": "Amity University, Kolkata",
+      "dates": "2023 – 2027",
+      "score": "CGPA: 8.01",
+      "image": "/assets/amity-logo.png"
+    }
+  ],
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mir-sahin-ali-a4637b326/",
+      "image": "/assets/linkedin.png"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:mir1sahin123@gmail.com",
+      "image": "/assets/gmail.png"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/MIRSAHINALI",
+      "image": "/assets/github-logo.png"
+    }
+  ],
+  "resume": {
+    "url": "/assets/Mir-Sahin-Ali-Resume.pdf"
+  },
+  "coding": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/MIRSAHINALI",
+      "handle": "@MIRSAHINALI",
+      "description": "3 public repositories · 2 followers · September 19, 2026"
+    },
+    {
+      "name": "LeetCode",
+      "url": "https://leetcode.com/u/mir1sahin123/",
+      "handle": "@mir1sahin123",
+      "description": "Data structures, algorithms, and problem solving."
+    }
+  ],
+  "gallery": {
+    "title": "My Gallery",
+    "subtitle": "Mir Sahin Ali | Full-Stack Developer",
+    "description": "A moment beyond the code. Thank you for visiting my portfolio. Keep in touch as I continue learning, building, and sharing my journey.",
+    "video": "/assets/gallery.mp4"
+  },
+  "photos": []
+}
